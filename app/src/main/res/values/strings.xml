@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TieqViet</string>
+
+    <!--<string name="banner_id">ca-app-pub-7982889967954509~7876613539</string>-->
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
 </resources>
