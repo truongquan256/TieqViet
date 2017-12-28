@@ -4,22 +4,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/yourContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/banner">
+        android:layout_above="@+id/banner"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="start"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_translate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Tiếng Việt-Tieq Viet"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tieq Viet- Tiếng Việt"/>
+        </LinearLayout>
 
         <TextView
+            android:id="@+id/tv_output"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="YOUR CONTENT"
-            android:textColor="#CCC"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="start"/>
+    </LinearLayout>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/banner"
